@@ -1,0 +1,122 @@
+.how-it-works {
+   padding-left: 85px;
+   padding-top: 351px;
+   padding-bottom: 200px;
+}
+
+.how-it-works__title {
+   margin: 0;
+   margin-bottom: 178px;
+   color: $color-grey;
+   font-family: $font-primary;
+   font-weight: 900;
+   font-size: 24px;
+   line-height: 32px;
+}
+
+.how-it-works__list {
+   display: flex;
+   align-items: center;
+   margin: 0;
+   margin-bottom: 64px;
+   padding: 0;
+   list-style: none;
+   counter-reset: item;
+}
+
+.how-it-works__item {
+   position: relative;
+   z-index: 1;
+   max-width: 380px;
+   padding-right: 95px;
+   counter-increment: item;
+}
+
+.how-it-works__item:not(:last-child):before{
+   width: 100%;
+   height: 2px;
+   top: -82px;
+   position: absolute;
+   z-index: 1;
+   color: $color-PaleOrange ;
+   background-color:$color-PaleOrange ;
+   content: '';
+}
+
+.how-it-works__item::after{
+   width: 31px;
+   height: 31px;
+   top: -96px;
+   position: absolute;
+   z-index: 1;
+   background-color: $color-LightCream;
+   border: 2px solid $color-darkCyan;
+   border-radius: 50%;
+   content: '';
+}
+
+.how-it-works__item-title {
+   width: 255px;
+   margin: 0;
+   margin-bottom: 42px;
+   font-family: $font-primary;
+   font-weight: 900;
+   font-size: 32px;
+   line-height: 36px;
+}
+
+.how-it-works__item-title::before{
+   display: block;
+   margin-bottom: 38px;
+   font-family: $font-primary;
+   font-weight: 900;
+   font-size: 72px;
+   line-height: 1.3;
+   color: $color-PaleOrange;
+   content: '0' counter(item);
+}
+
+.how-it-works__item-des {
+   margin: 0;
+}
+
+@media only screen and (max-width:470px) {
+   .how-it-works{
+      padding-top: 1280px;
+      padding-bottom: 120px;
+      padding-left: 0;
+   }
+
+   .how-it-works__title{
+      margin-bottom: 80px;
+      text-align: center;
+   }
+
+   .how-it-works__list{
+      flex-direction: column;
+   }
+
+   .how-it-works__item{
+      max-width: 327px;
+      padding-right: 0;
+      text-align: center;
+   }
+
+   .how-it-works__item::after{
+      display: none;
+   }
+
+   .how-it-works__item:not(:last-child):before{
+      display: none;
+   }
+
+   .how-it-works__item-title{
+      max-width: 327px;
+      font-size: 28px;
+      line-height: 32px;
+   }
+
+   .how-it-works__item-des{
+      font-size: 15px;
+   }
+}

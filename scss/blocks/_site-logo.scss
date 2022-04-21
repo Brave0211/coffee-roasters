@@ -1,0 +1,31 @@
+.site-logo{
+   display: inline-block;
+   margin-right: 100px;
+   transition: opacity 0.3s ease;
+}
+
+.site-logo:hover{
+   opacity: 0.8;
+}
+
+.site-logo__img {
+   display: block;
+}
+
+@media only screen and (max-width: 870px) {
+   .site-logo{
+      margin-right: 0;
+   }
+
+   .site-logo__img{
+      width: 235px;
+      height: 25px;
+   }
+}
+
+@media only screen and (max-width: 470px) {
+   .site-logo__img{
+      width: 162px;
+      height: 17px;
+   }
+}

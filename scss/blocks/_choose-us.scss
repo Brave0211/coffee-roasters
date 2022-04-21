@@ -1,0 +1,250 @@
+.choose-us {
+   position: relative;
+   padding-top: 100px;
+   padding-bottom: 317px;
+   color: $color-LightCream;
+   border-radius: 10px;
+   background-color: $color-DarkGreyBlue;
+}
+
+.choose-us__title {
+   margin: 0;
+   margin-bottom: 32px;
+   font-weight: 900;
+   font-size: 40px;
+   line-height: 48px;
+   font-family: $font-primary;
+   text-align: center;
+}
+
+.choose-us__desc {
+   max-width: 538px;
+   margin: 0 auto;
+   opacity: 0.8;
+   text-align: center;
+}
+
+.choose-us__list {
+   position: absolute;
+   bottom: -151px;
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   margin: 0;
+   padding: 0;
+   list-style: none;
+}
+
+.choose-us__item {
+   position: relative;
+   max-width: 350px;
+   padding: 200px 48px 48px 47px;
+   background-color: $color-darkCyan;
+   border-radius: 8px;
+   text-align: center;
+}
+
+.choose-us__item:not(:last-child){
+   margin-right: 30px;
+}
+
+.choose-us__item-title {
+   margin: 0;
+   margin-bottom: 24px;
+   font-family: $font-primary;
+   font-weight: 900;
+   font-size: 24px;
+   line-height: 32px;
+}
+
+.choose-us__item-coffee::before{
+   position: absolute;
+   top: 72px;
+   left: 136px;
+   width: 72px;
+   height: 72px;
+   display: block;
+   background-image: url(../images/coffe-dona.png);
+   background-repeat: no-repeat;
+   content: '';
+}
+
+.choose-us__item-surprise::before{
+   position: absolute;
+   top: 72px;
+   left: 136px;
+   width: 72px;
+   height: 72px;
+   display: block;
+   background-image: url(../images/sovga.png);
+   background-repeat: no-repeat;
+   content: '';
+}
+
+.choose-us__item-car::before{
+   position: absolute;
+   top: 90px;
+   left: 136px;
+   width: 72px;
+   height: 72px;
+   display: block;
+   background-image: url(../images/moshin.png);
+   background-repeat: no-repeat;
+   content: '';
+}
+
+.choose-us__item-desc {
+   max-width: 255px;
+   margin: 0;
+}
+
+@media only screen and (max-width:870px) {
+   .choose-us{
+      max-width: 688px;
+      padding-top: 56px;
+      padding-bottom: 368px;
+   }
+
+   .choose-us__title{
+      margin-bottom: 24px;
+      font-size: 32px;
+      line-height: 48px;
+   }
+
+   .choose-us__desc{
+      max-width: 495px;
+      font-size: 15px;
+      line-height: 25px;
+   }
+
+   .choose-us__list{
+      left: 57px;
+      flex-direction: column;
+      bottom: -290px;
+   }
+
+   .choose-us__item{
+      max-width: 573px;
+      padding-top: 41px;
+      padding-bottom: 41px;
+      padding-left: 181px;
+   }
+
+   .choose-us__item:not(:last-child){
+      margin-right: 0;
+      margin-bottom: 24px;
+   }
+
+   .choose-us__item-title{
+      max-width: 255px;
+      margin-bottom: 16px;
+      text-align: left;
+   }
+
+   .choose-us__item-coffee::before{
+      top: 55px;
+      left: 66px;
+      width: 56px;
+      height: 56px;
+      background-size: contain;
+   }
+
+   .choose-us__item-surprise::before{
+      top: 55px;
+      left: 66px;
+      width: 56px;
+      height: 56px;
+      background-size: contain;
+   }
+
+   .choose-us__item-car::before{
+      top: 55px;
+      left: 66px;
+      width: 56px;
+      height: 56px;
+      background-size: contain;
+   }
+
+   .choose-us__item-desc{
+      max-width: 344px;
+      font-size: 15px;
+      line-height: 25px;
+      text-align: left;
+   }
+}
+
+@media only screen and (max-width:470px) {
+   .choose-us{
+      padding-top: 64px;
+      padding-bottom: 28px;
+   }
+
+   .choose-us__title{
+      font-size: 28px;
+      line-height: 28px;
+   }
+
+   .choose-us__desc{
+      max-width: 279px;
+   }
+
+   .choose-us::after{
+      position: absolute;
+      display: block;
+      top: 100%;
+      max-width: 327px;
+      height: 633px;
+      background-color: #000;
+      content: '';
+   }
+
+   .choose-us__list{
+      top: 855px;
+      left: 70px;
+   }
+
+   .choose-us__item{
+      max-width: 279px;
+      padding-top: 72px;
+      padding-bottom: 51px;
+      padding-left: 33px;
+      padding-right: 33px;
+      text-align: center;
+   }
+
+   .choose-us__item:not(:last-child){
+      margin-right: 0;
+      margin-bottom: 24px;
+   }
+
+   .choose-us__item-title{
+      max-width: 255px;
+      margin-bottom: 16px;
+      font-size: 22px;
+      line-height: 32px;
+      text-align: center;
+   }
+
+   .choose-us__item-coffee::before{
+      position: static;
+      margin: 0 auto;
+      margin-bottom: 56px;
+   }
+
+   .choose-us__item-surprise::before{
+      position:static;
+      margin: 0 auto;
+      margin-bottom: 56px;
+   }
+
+   .choose-us__item-car::before{
+      position: static;
+      margin: 0 auto;
+      margin-bottom: 56px;
+   }
+
+   .choose-us__item-desc{
+      max-width: 209px;
+      text-align: center;
+   }
+}

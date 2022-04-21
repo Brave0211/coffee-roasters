@@ -1,0 +1,86 @@
+.about-us {
+   padding-top: 10px;
+   padding-bottom: 168px;
+}
+
+.about-us__container {
+   padding-top: 137px;
+   padding-bottom: 137px;
+   padding-left: 85px;
+   color: $color-LightCream;
+   background-color: rgba(0, 0, 0, 0.401854);
+   background-image: url(../../images/about-bg.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   border-radius: 10px;
+}
+
+.about-us__content {
+   max-width: 445px;
+}
+
+.about-us__title {
+   margin: 0;
+   margin-bottom: 24px;
+   font-family: $font-primary;
+   font-weight: 900;
+   font-size: 40px;
+   line-height: 48px;
+}
+
+.about-us__desc {
+   margin: 0;
+}
+
+@media only screen and (max-width:870px) {
+   .about-us{
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-bottom: 144px;
+   }
+
+   .about-us__container{
+      padding-left: 58px;
+      background-image: url(../../images/tablet-bgimg.jpg);
+   }
+
+   .about-us__content{
+      max-width: 398px;
+   }
+
+   .about-us__title{
+      font-size: 32px;
+      line-height: 40px;
+   }
+
+   .about-us__desc{
+      font-size: 15px;
+      line-height: 25px;
+   }
+}
+
+@media only screen and (max-width: 470px) {
+   .about-us{
+      padding-bottom: 140px;
+   }
+   
+   .about-us__container{
+      padding-top: 111px;
+      padding-bottom: 87px;
+      padding-left: 24px;
+      background-image: url(../../images/phone-bg.jpg);
+   }
+
+   .about-us__content{
+      max-width: 279px;
+      margin: 0 auto;
+      text-align: center;
+   }
+
+   .about-us__title{
+      font-size: 28px;
+      line-height: 28px;
+   }
+
+
+}

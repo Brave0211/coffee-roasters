@@ -1,0 +1,15 @@
+.site-header {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding-top: 44px;
+   padding-bottom: 45px;
+}
+
+@media only screen and (max-width:470px) {
+   .site-header{
+      padding-top: 32px;
+      padding-bottom: 41px;
+      align-items: center;
+   }
+}

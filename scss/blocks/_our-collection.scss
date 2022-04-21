@@ -1,0 +1,148 @@
+.our-collection {
+   padding-top: 136px;
+   padding-bottom: 200px;
+}
+
+.our-collection__title {
+   margin: 0;
+   font-family: $font-primary;
+   font-weight: 900;
+   font-size: 150px;
+   line-height: 1.5;
+   text-align: center;
+   background-color: $color-grey;
+   background-image: linear-gradient(180deg,rgba(254, 252, 247, 0.0001) 0%,#FEFCF7 100%);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+}
+
+.our-collection__list {
+   display: flex;
+   justify-content: center;
+   margin: 0;
+   margin-top: -105px;
+   padding: 0;
+   list-style: none;
+}
+
+.our-collection__item {
+   max-width: 255px;
+   text-align: center;
+}
+
+.our-collection__item:not(:last-child){
+   margin-right: 30px;
+}
+
+.our-collection__img {
+   margin-bottom: 72px;
+}
+
+.our-collection__item-title {
+   margin: 0;
+   margin-bottom: 24px;
+   font-family: $font-primary;
+   font-weight: 900;
+   font-size: 24px;
+   line-height: 32px;
+   text-transform: capitalize;
+}
+
+.our-collection__item-desc {
+   margin: 0;
+}
+
+@media only screen and (max-width:870px) {
+   .our-collection{
+      padding-top: 144px;
+      padding-bottom: 144px;
+   }
+
+   .our-collection__title{
+      font-size: 96px;
+      line-height: 1.5;
+   }
+
+   .our-collection__list{
+      flex-direction: column;
+      margin-top: -50px;
+      padding-right: 128px;
+   }
+   
+   .our-collection__item{
+      max-width: 573px;
+      position: relative;
+      margin-left: auto;
+   }
+
+   .our-collection__item:not(:last-child){
+      margin-right: 0;
+      margin-bottom: 130px;
+   }
+
+   .our-collection__img{
+      width: 255px;
+      height: 193px;
+      position: absolute;
+      top: -26px;
+      left: -285px;
+      margin: 0;
+   }
+
+   .our-collection__item-title{
+      max-width: 255px;
+   }
+
+   .our-collection__item-desc{
+      max-width: 282px;
+      font-size: 15px;
+      line-height: 25px;
+   }
+}
+
+
+@media only screen and (max-width:470px) {
+   .our-collection{
+      padding-top: 120px;
+      padding-bottom: 120px;
+   }
+
+   .our-collection__title{
+      margin-bottom: 13px;
+      font-size: 40px;
+      line-height: 72px;
+   }
+
+   .our-collection__list{
+      margin: 0;
+      padding: 0;
+   }
+
+   .our-collection__item{
+      max-width: 282px;
+      margin: 0 auto;
+   }
+
+   .our-collection__item:not(:last-child){
+      margin-right: auto;
+      margin-bottom: 48px;
+   }
+
+   .our-collection__img{
+      position: static;
+      display: block;
+      width: 200px;
+      height: 151px;
+      margin: 0 auto;
+      margin-bottom: 24px;
+   }
+
+   .our-collection__item-title{
+      margin: 0 auto;
+      margin-bottom: 16px;
+   }
+
+   .our-collection__item-desc{
+      text-align: center;
+   }
+}

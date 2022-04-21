@@ -1,0 +1,25 @@
+.primary-link {
+   width: 217px;
+   display: inline-block;
+   padding: 15px 31px;
+   text-decoration: none;
+   color: $color-LightCream;
+   background-color: $color-darkCyan;
+   border-radius: 6px;
+   font-family: 'Fraunces';
+   font-weight: 900;
+   font-size: 18px;
+   line-height: 25px;
+   transition: background-color 0.3s ease ;
+}
+
+.primary-link:hover{
+   background-color:$color-hover;
+}
+
+@media only screen and (max-width:470px){
+   .primary-link{
+      display: block;
+      margin: 0 auto;
+   }
+}
